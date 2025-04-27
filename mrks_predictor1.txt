@@ -1,0 +1,10 @@
+import joblib
+
+print ("Welcome to AI..")
+
+hrs = input("Enter ur hrs :")
+
+
+model = joblib.load("my_mrks_model")
+
+print ( model.predict( [[ int(hrs) ]] ) )
